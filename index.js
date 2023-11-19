@@ -10,11 +10,10 @@ app.get('/', (req, res) => {
 
     // Create a transporter using SMTP
     const transporter = nodemailer.createTransport({
-        host: 'smtp.mailtrap.io',
-        port: 2525,
+        service: 'Gmail',
         auth: {
-          user: '22c573c9c471d1',
-          pass: 'd10c759a270c1c'
+          user: 'zainarfeen87@gmail.com',
+          pass: 'koxs uhlr iche nlsj'
         }
       });
 
@@ -23,7 +22,7 @@ app.get('/', (req, res) => {
         from: 'zainarfeen87@gmail.com',
         to: 'homezain735@gmail.com',
         subject: 'Test Email',
-        text: 'Hello i am Zain'
+        text: 'Hello i am Zain 2.0'
     };
 
     // Send email
